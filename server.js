@@ -10,7 +10,7 @@ const animal = require("./app/api/routes/animal.route");
 const collaboration = require("./app/api/routes/collaboration.route");
 
 const HTTPSTATUSCODE = require("./app/utils/httpStatusCode");
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 connect();
 
